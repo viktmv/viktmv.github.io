@@ -3,63 +3,29 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+const renderPrimaryHeader = title =>
+  <h1 style={Styles.heading}>
+    <Link style={Styles.link} to={`/`}>
+      {title}
+    </Link>
+  </h1>
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
+const renderSecondaryHeader = title =>
+  <h3 style={Styles.pageHeading}>
+    <Link style={Styles.link} to={`/`}>
+      {title}
+    </Link>
+  </h3>
+
+const Layout = props => {
+    const { location, title, children } = props
+    const rootPath = `${__PATH_PREFIX__}/`
+    let header = location.pathname === rootPath
+      ? renderPrimaryHeader(title)
+      : renderSecondaryHeader(title)
+
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <div style={Styles.wrapper}>
         <header>{header}</header>
         <main>{children}</main>
         <footer>
@@ -70,6 +36,28 @@ class Layout extends React.Component {
       </div>
     )
   }
-}
 
 export default Layout
+
+const Styles = {
+  rootHeading: {
+    ...scale(1.5),
+    marginBottom: rhythm(1.5),
+    marginTop: 0
+  },
+  pageHeading: {
+    fontFamily: `Montserrat, sans-serif`,
+    marginTop: 0,
+  },
+  link: {
+    boxShadow: `none`,
+    textDecoration: `none`,
+    color: `inherit`
+  },
+  wrapper: {
+    marginLeft: `auto`,
+    marginRight: `auto`,
+    maxWidth: rhythm(24),
+    padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+  }
+}
