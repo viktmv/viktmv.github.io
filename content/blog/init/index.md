@@ -3,6 +3,5 @@ title: init
 date: "2019-12-29T20:03:56.785Z"
 ---
 
-Setting up the blog. First post, first steps
+Setting up gatsby project  
 
-Welcome to the world!

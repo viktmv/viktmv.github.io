@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
@@ -11,12 +10,6 @@ const Bio = () =>
       const { author, social } = data.site.siteMetadata
       return (
         <div style={styles.wrapper}>
-          <Image
-            fixed={data.avatar.childImageSharp.fixed}
-            alt={author}
-            style={styles.image}
-            imgStyle={{ borderRadius: `50%` }}
-          />
           <p>
             by <strong>{author}</strong>
             {` `}
