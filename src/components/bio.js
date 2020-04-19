@@ -25,7 +25,7 @@ const Bio = () =>
 const styles = {
   wrapper: {
     display: `flex`,
-    marginBottom: rhythm(2.5),
+    marginBottom: rhythm(1 / 4),
   },
   image: {
     marginRight: rhythm(1 / 2),

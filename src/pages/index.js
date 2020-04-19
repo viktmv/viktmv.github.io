@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Switch from "../components/Switch"
 import { rhythm } from "../utils/typography"
 
 const renderNode = ({ node }) => {
@@ -11,7 +12,7 @@ const renderNode = ({ node }) => {
   return (
     <div key={node.fields.slug}>
       <h3
-        style={{ marginBottom: rhythm(1 / 4) }}
+        style={{ marginBottom: rhythm(1 / 8) }}
       >
         <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
           {title}
@@ -32,11 +33,20 @@ const Index = props => {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    const [shouldIncludeDrafts, toggleDrafts] = useState(false)
+    const byDraftTitle = ({node: {frontmatter}}) => shouldIncludeDrafts
+      ? true
+      : !/draft/g.test(frontmatter.title)
+
     return (
       <Layout location={props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        {posts.map(renderNode)}
+        <Switch toggle={toggleDrafts} value={shouldIncludeDrafts} />
+        {posts
+          .filter(byDraftTitle)
+          .map(renderNode)
+        }
       </Layout>
     )
   }
