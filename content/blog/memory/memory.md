@@ -3,8 +3,6 @@ title: memory
 date: "2020-04-05T14:15:56"
 ---
 
-Memory  
-
 Human memory is short.  
 
 People tend to forget rather quickly. Time goes by, old things are forgotten, old mistakes are buried, old ideas don’t really matter anymore.  
