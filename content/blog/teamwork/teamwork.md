@@ -16,6 +16,6 @@ people they depend on. There are teams who work hard to help bring this person w
 
 Same applies to programming industry. Lone developer, be they 10x, rockstar, or ninja, cannot make a significant
 impact on company's progress or industry development unless supported by peers, colleagues or team members.
-This is why, we as an industry should make sure we encourage development of soft skills, and bring people with those skills to programming. Kindness, communication, writing, clear thinking - combined with some tech domain knowledge these are the skills that will catapult forward the next big thing.
+This is why we as an industry should make sure we encourage development of soft skills and bring people with those skills to programming. Kindness, communication, writing, clear thinking - these are the skills that, combined with some tech domain knowledge, will catapult forward the next big thing.
 
 The times for jerk-geniuses has passed.
