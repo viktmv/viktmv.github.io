@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Switch from "../components/Switch"
+import Switch from "../components/switch"
 import { rhythm } from "../utils/typography"
 
 const renderNode = ({ node }) => {
