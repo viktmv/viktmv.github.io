@@ -42,7 +42,7 @@ const Index = props => {
       <Layout location={props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        <Switch toggle={toggleDrafts} value={shouldIncludeDrafts} />
+        // <Switch toggle={toggleDrafts} value={shouldIncludeDrafts} />
         {posts
           .filter(byDraftTitle)
           .map(renderNode)

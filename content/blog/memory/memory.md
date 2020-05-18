@@ -1,5 +1,5 @@
 ---
-title: memory-draft
+title: memory
 date: "2020-04-05T14:15:56"
 ---
 
@@ -9,7 +9,7 @@ Human memory is short.
 
 People tend to forget rather quickly. Time goes by, old things are forgotten, old mistakes are buried, old ideas don’t really matter anymore.  
 
-What follows has two sides:  
+This leads to two observations:  
 
 First, we quickly forget lies, mistakes that cost lives, and very often bad deeds go unpunished	 and without consequences for crimes committed.  
 
