@@ -3,7 +3,7 @@ module.exports = {
     title: `firelight`,
     author: `Viktor T.`,
     description: `Viktor's blog`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://firelight.dev`,
     social: {
       twitter: `viktmv`,
     },
