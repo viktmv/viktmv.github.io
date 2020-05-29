@@ -4,10 +4,13 @@ date: "2020-05-29T14:15:56"
 tags: "programming, coding, javascript"
 ---
 
-Here I'll try to summarize the principles and rules I try to follow when writing code.  
-This list is obviously not complete, and will be expanded as I re-evaluate new ideas.  
+Recently I've been trying to compile and formulate a list of principles and values that are important to me, both in private life and in my career as software developer.  
 
-My 6 principles of writing good code:
+My motivation here is quite simple. I think it's incredibly beneficial to write your thoughts down. This allows you to crystallize ideas inside your head into something concrete and make them clearer. It allows you to understand yourself better.
+
+In this post I'll try to summarize the principles and rules I try to follow when writing code. This list is obviously not complete, and will be expanded as I re-evaluate new ideas.  
+
+So here goes, my 6 principles of writing good quality code:
 * Make it work
 * Clarity / Readability
 * Simplicity
