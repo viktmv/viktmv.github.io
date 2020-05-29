@@ -4,7 +4,7 @@ date: "2020-05-29T14:15:56"
 tags: "programming, coding, javascript"
 ---
 
-Here, I'll try to summarize the principles and rules I try to follow when writing code.  
+Here I'll try to summarize the principles and rules I try to follow when writing code.  
 This list is obviously not complete, and will be expanded as I re-evaluate new ideas.  
 
 My 6 principles of writing good code:
@@ -56,3 +56,8 @@ But don't go into too much details just yet. It's like wire-framing with thick s
 Implementation details are best improvised, just because there's a huge possibility that they're gonna change either way.  Unexpected things come up, requirements change, refactoring might discover better approaches, life happens.
 
 Meticulously planning every single details ahead of time doesn't really work in real life. This is why we have Agile. Sketching things as you go is a perfectly valid approach.
+***
+
+In conclusion, formulating your own principles is always an on-going process. But you can use them as sort of a moral compass in your day-to-day decision making process.
+
+Also, it really helps to have something to come back to in order to reflect about what motivates you and what you value in your craft.

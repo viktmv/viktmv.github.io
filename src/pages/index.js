@@ -14,7 +14,7 @@ const renderNode = ({ node }) => {
       <h3
         style={{ marginBottom: rhythm(1 / 8) }}
       >
-        <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+        <Link style={{ boxShadow: `none` }} to={node.fields.slug.split('/')[1]}>
           {title}
         </Link>
       </h3>
