@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
+import './layout.css'
+
 const renderPrimaryHeader = title =>
   <h1 style={Styles.heading}>
     <Link style={Styles.link} to={`/`}>
