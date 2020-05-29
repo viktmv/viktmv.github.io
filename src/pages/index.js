@@ -34,17 +34,15 @@ const Index = props => {
     const posts = data.allMarkdownRemark.edges
 
     const [shouldIncludeDrafts, toggleDrafts] = useState(false)
-    const byDraftTitle = ({node: {frontmatter}}) => shouldIncludeDrafts
-      ? true
-      : !/draft/g.test(frontmatter.title)
+    const notHidden = ({node: {frontmatter}}) => !(frontmatter.tags || '')
+      .includes('hidden')
 
     return (
       <Layout location={props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        { /* <Switch toggle={toggleDrafts} value={shouldIncludeDrafts} /> */}
         {posts
-          .filter(byDraftTitle)
+          .filter(notHidden)
           .map(renderNode)
         }
       </Layout>
@@ -70,6 +68,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tags
           }
         }
       }

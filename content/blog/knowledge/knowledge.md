@@ -1,6 +1,7 @@
 ---
 title: knowledge
 date: "2020-04-20T11:00:00"
+tags: "hidden"
 ---
 
 Intellectuals of the past had an opportunity to memorize knowledge. It was important to be an erudite if you wanted to be smart.
