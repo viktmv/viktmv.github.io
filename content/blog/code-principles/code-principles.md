@@ -21,7 +21,12 @@ So here goes, my 6 principles of writing good quality code:
 
 ### Make it work
 This is mostly self-explanatory. Code should accomplish the goal it was written for.
-Be it a business problem, or a more technical matter - code should work, and work well.
+
+You write code to achieve something. Either to make a form, to launch an information system, or to optimize the Linux kernel - you have a specific goal in mind. And that goal should be satisfied. Otherwise, what's the point?
+
+Your code should not crash all the time. Bugs should not prevent people from using your service. You shouldn't constantly be putting out fires caused by the bad code you shipped.
+
+Be it a business problem, or a more technical matter - code that solves it should work, and work well.
 
 ### Clarity / Readability
 Code should be clear and readable. Ever looked at the code and thought _"What the hell is going on here?"_  
@@ -38,7 +43,8 @@ Less is more. Unless it interferes with other principles, i.e. Readability
 ### Efficiency
 Code should not only work, but work well.
 
-That means there should be a conscious effort to make it efficient.
+That means there should be a conscious effort to make it efficient. I'm not necessarily talking about the Big O and all the fancy optimizations (while that is also often important), but more about keeping in mind the overall performance of your application.
+
 DB query that works, is easy to read, but takes a gazillion seconds to run is not what I'm striving for.
 
 ### Refactoring
@@ -52,7 +58,7 @@ First implementation is always just a first draft. Drafts are meant to be re-wri
 ### Plan broadly, improvise the details
 _Weeks of coding can save you hours of planning_ ©  
 
-Start by thinking about the problem you want to solve first. Consider some approaches you can take, constrains that you might have, broad acrhitecture, general timelines etc.
+Start by thinking about the problem you want to solve first. Consider some approaches you can take, constrains that you might have, broad architecture, general timelines etc.
 
 But don't go into too much details just yet. It's like wire-framing with thick sharpie, you don't wanna get stuck over small details at this point.
 
@@ -61,6 +67,6 @@ Implementation details are best improvised, just because there's a huge possibil
 Meticulously planning every single details ahead of time doesn't really work in real life. This is why we have Agile. Sketching things as you go is a perfectly valid approach.
 ***
 
-That's pretty much it. However, I do want to emphasize that formulating your own principles is always an on-going process. But the good thing is that you can use them as sort of a moral compass in your day-to-day decision making process.
+That's pretty much it. However, I do want to emphasize that formulating your own principles is always an on-going process. But the good thing is that you can use them as sort of a guideline for making decisions in your day-to-day life.
 
 It helps a lot to have something you can come back to in order to reflect on what motivates you and what you value in your craft.
