@@ -1,3 +1,18 @@
 ul, ol {
   margin-left: 1.75rem;
 }
+
+.gatsby-highlight {
+    border-radius: 1%;
+    overflow: hidden;
+    margin-bottom: 1.75rem
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  margin: 0;
+  padding: 1rem;
+}
+
+pre[class*="language-"] code {
+    font-size: .85rem;
+}

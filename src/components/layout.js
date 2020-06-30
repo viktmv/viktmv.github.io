@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
+import './prism-theme.css';
 import './layout.css'
 
 const renderPrimaryHeader = title =>

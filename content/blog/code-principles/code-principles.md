@@ -1,5 +1,5 @@
 ---
-title: code-principles
+title: 6 principles I follow when writing code
 date: "2020-05-29T14:15:56"
 tags: "programming, coding, javascript"
 ---
