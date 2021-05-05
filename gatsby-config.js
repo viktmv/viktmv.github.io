@@ -44,7 +44,8 @@ module.exports = {
             options: {
               inlineCodeMarker: `>`,
               aliases: {
-                  j: 'javascript'
+                  j: 'javascript',
+                  e: 'elixir'
               }
             },
           },
